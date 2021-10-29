@@ -41,9 +41,9 @@ typedef unordered_map<string, int> umap_si;
 void solve(){
     int a,b,c;
     cin>>a>>b>>c;
-    int s = (a+b+c)/2;
-    int area = sqrt(s*(s-a)*(s-b)*(s-c));
-    if(area>0)cout<<"YES";else cout<<"NO";
+    if(a+b <c || b+c <a || a+c <b ){
+        cout<<"NO"<<endl;
+    }else cout<<"YES";
 
 }
 

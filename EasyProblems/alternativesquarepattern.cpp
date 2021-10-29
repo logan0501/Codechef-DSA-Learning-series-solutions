@@ -40,10 +40,19 @@ typedef unordered_map<string, int> umap_si;
 
 void printPattern(int n){
     int a=1;
-    while(n--){
+    REP(i,n){
+        if((i+1)%2){
+
         for(int i=0;i<5;i++){
             cout<<a++<<" ";
+        }  
+        }else{
+            a+=5;
+            for(int i=1;i<=5;i++){
+            cout<<a-i<<" ";
         }
+        }
+       
         cout<<endl;
     }
 }
